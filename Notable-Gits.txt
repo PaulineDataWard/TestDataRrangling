@@ -1,0 +1,32 @@
+My useful Git commands
+
+# help index
+git help git
+
+# help for <command>
+git help <command>
+
+# only needed once: set username and email
+git config --global user.name "PaulineDataWard"
+git config --global user.email "pauline.ward@ed.ac.uk"
+
+# Create a remote repo
+On github.com: 
+* Click 'Create a new repo' foo-repo
+In git bash:
+mkdir ~/foo-repo
+cd ~/foo-repo
+# Initialise local git repo
+git init
+# Point the local repo to the new remote repo just created on github.com
+# NOT git remote add origin https://github.com/paulinedataward/training.git
+git remote set-url origin https://github.com/paulinedataward/training.git
+
+# Forking Fabulous Repos
+On github.com, find a repo, click on 'Fork'
+In git bash: 
+git clone https://github.com/PaulineDataWard/MLNotes.git
+
+# Add - Commit - Push
+git add . # add all 'new' files in curr dir to staging area/index
+git commit 
